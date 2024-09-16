@@ -1,0 +1,16 @@
+:root {
+  --shadow1: 5px 5px 0px #000000;
+  --shadow2: 2px 2px 0px #000000;
+  --box-border: 3px solid black;
+  --box-border2: 1px solid black;
+  --back-grad1: rgb(22,0,74);
+  --back-grad2: linear-gradient(30deg, rgba(22,0,74,1) 0%, rgba(0,88,156,1) 35%, rgba(45,208,205,1) 100%);
+  --body-back: #ffffff;
+  --round-corner: 0px;
+  --margin: 10px;
+  --max-height: 95vh;
+  --para-color: #000000;
+  --para-shadow: 2px 2px 2px #00000050;
+  --text-indent: 25px;
+  --divide: 1px dashed #000000;
+}
