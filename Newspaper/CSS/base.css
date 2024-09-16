@@ -1,0 +1,192 @@
+/* This is all text styling. */
+
+p {
+    color: var(--text-color);
+    text-indent: 25px;
+  }
+  
+  a {
+    color: var(--link-color);
+  }
+  
+  /* Can you tell I really, really like
+  having a bottom border on my headers?
+  You can remove these if you'd like,
+  or you can experiment with them!
+  https://www.w3schools.com/css/css_border.asp */
+  
+  h1 {
+    text-align: center;
+    border-bottom: solid 3px; 
+  }
+  
+  h2 {
+    border-bottom: double 3px;
+  }
+  
+  h3 {
+    border-bottom: dotted 1px;
+  }
+  
+  hr {
+    border: dotted 1px;
+  }
+  
+  /* This is a table I designed to use
+  for any of my wiki-related needs. */
+  
+  table {
+    padding: 10px;
+    background-color: var(--table-color1);
+    width: var(--table-width);
+    max-width: var(--table-width);
+    margin: 10px;
+    float: right;
+    border-collapse: collapse;
+    box-shadow: var(--shadow2);
+    order: 3;
+  }
+  
+  td, th {
+    padding: 10px;
+  }
+  
+  th {
+    height:300px;
+    width:300px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: var(--table-color2);
+  }
+  
+  /* This is all page & div styling. */
+  
+  body {
+    background-color: var(--back-color);
+    display: flex; /* I noticed that using the body element as the "container" for all things flexbox made the page look smoother. */
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .links {
+    background-color: var(--page-color);
+    width: auto;
+    height: auto;
+    display: flex;
+    order: 1;
+    flex-wrap: wrap;
+  }
+  
+  .button {
+    background-color: var(--button-color);
+    box-shadow: var(--shadow2);
+    border-radius: 5px;
+    min-width: 15%;
+    margin: 10px;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    transition: background-color 0.25s;
+  }
+  
+  .button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .button a {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .page {
+    background-color: var(--page-color);
+    width: 45%;
+    height: auto;
+    min-height: 100vh;
+    box-shadow: var(--shadow);
+    padding: 10px;
+    order: 2;
+  }
+  
+  /* Media queries handle page layout once the screen is
+  a certain amount of pixels wide. This, for example, shifts elements
+  so they are more readable on a mobile screen.
+  This particular query should support tablets
+  as well as mobile devices. */
+  
+  @media only screen and (max-width: 1000px) {
+    
+    table {
+      padding: 10px;
+      background-color: var(--table-color1);
+      width: var(--table-width);
+      max-width: var(--table-width);
+      float: none;
+      margin: auto;
+      border-collapse: collapse;
+      box-shadow: var(--shadow2);
+      order: 2;
+      text-align: center;
+    }
+    
+    td, th {
+      padding: 10px;
+    }
+    
+    th {
+      height:300px;
+      width:300px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: var(--table-color2);
+    }
+    
+    .links {
+      background-color: var(--page-color);
+      width: auto;
+      height: auto;
+      display: flex;
+      order: 1;
+      flex-wrap: wrap;
+    }
+    
+    .button {
+      background-color: var(--button-color);
+      box-shadow: var(--shadow2);
+      border-radius: 5px;
+      min-width: 35%;
+      margin: 10px;
+      flex-grow: 1;
+      justify-content: space-evenly;
+      transition: background-color 0.25s;
+    }
+    
+    .button:hover {
+      background-color: var(--hover-color);
+    }
+    
+    .button a {
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 10px;
+      text-decoration: none;
+      text-align: center;
+    }
+    
+    .page {
+      background-color: var(--page-color);
+      width: 90%;
+      height: auto;
+      min-height: 100vh;
+      box-shadow: var(--shadow);
+      padding: 10px;
+      order: 2;
+    }
+    
+  }  

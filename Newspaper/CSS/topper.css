@@ -1,0 +1,14 @@
+:root{
+    --back-img: url("#");
+    --back-color: #ffffff;
+    --page-color: #faf3ed;
+    --text-color: #000000;
+    --link-color: #000000;
+    --button-color: #c1bcb8;
+    --hover-color: #f3eae3;
+    --shadow: 0px 0px 30px #00000050;
+    --shadow2: 0px 0px 10px #00000050;
+    --table-width: 300px;
+    --table-color1: #faf3ed;
+    --table-color2: #ffffff;
+  }
