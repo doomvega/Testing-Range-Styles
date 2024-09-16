@@ -1,0 +1,334 @@
+/* Hi! It's DOOMVEGA. I noted on the Testing Range styles page that this layout
+is a little more complex than the other ones up on the site.
+I've left comments to help you understand and customize this layout
+to your needs. <3
+
+If it's still daunting, use https://www.w3schools.com/ to your advantage.
+I've been a webmaster for a few years now and I still use this every day. */
+
+/* This is all text styling. */
+
+p {
+    color: var(--para-color);
+    text-shadow: var(--text-shadow);
+  }
+  
+  a {
+    font-weight: bold;
+    color: var(--link-color);
+    text-shadow: var(--text-shadow);
+  }
+  
+  h1, h2, h3 {
+    border-bottom: dashed 1px;
+    color: var(--head-color);
+    text-shadow: var(--text-shadow);
+  }
+  
+  hr {
+    height: 1px;
+    border: none;
+    border-top: dashed 1px;
+  }
+  
+  /* This is all page & div styling. */
+  
+  body {
+    background-color: var(--back-color);
+    background: var(--grad1);
+    background: var(--grad2);
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /* This is the central part of the page.
+  This is where the text and photo gallery lives. */
+  
+  .page {
+    background-color: var(--page-color);
+    width: var(--overall-width1);
+    min-height: 90vh;
+    max-height: auto;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    margin: 10px;
+    border-radius: var(--corner);
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  
+  /* This controls the width of the text.
+  I didn't like how it looked at max width, so
+  it is set to 85%.*/
+  
+  .text {
+    width: 85%;
+    margin: auto;
+  }
+  
+  /* This is the "header" or "navbar", not to be
+  confused with the h1, h2, h3, etc elements.*/
+  
+  .head {
+    background-color: var(--nav-color);
+    width: var(--overall-width1);
+    height: auto;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    text-align: center;
+    border-radius: var(--corner);
+    order: 1;
+  }
+  
+  /* This contains the buttons. Technically, it's
+  not a navbar. Great naming convention, I know.*/
+  
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Buttons! DO NOT TOUCH. Touching them will
+  likely make them break, PLEASE be careful! */
+  
+  .button {
+    background: var(--grad1);
+    background: var(--grad3);
+    min-width: 200px; /* This argues that the buttons at their smallest can only be 200px wide. */
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: var(--corner);
+    border: solid #ffffff50;
+    flex-grow: 1; /* This allows the buttons to grow when they need to grow. */
+    transition: transform 250ms;
+    box-shadow: var(--box-shadow2);
+    align-self: flex-start;
+  }
+  
+  /* Small button animation! */
+  
+  .button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* This makes the link much bigger
+  so the div acts as a button. This is especially
+  useful on mobile, and looks great on a PC. */
+  
+  .button a {
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* An invisible container that allows the gallery cards to
+  sit comfortably on the page. */
+  
+  .cardcontain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+  }
+  
+  /* Image half of the card */
+  
+  .cardfirst {
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: var(--corner);
+    background-color: var(--page-color);
+    flex-grow: 1;
+    margin: 10px;
+    transition: transform 250ms;
+    box-shadow: var(--box-shadow2);
+  }
+  
+  /* Forces the image to crop to fit inside the div */
+  
+  .cardfirst img {
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Small image animation */
+  
+  .cardfirst:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Caption half of the card */
+  
+  .cardsecond {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--page-color);
+    max-height: 50px; /* This & overflow: auto; allow for captions to have scrollbars if needed. I recommend keeping captions short and sweet. */
+    overflow: auto;
+  }
+  
+  /* Styles p text within .cardsecond to always be italic.
+  You can change or remove this if you'd like. */
+  
+  .cardsecond p {
+    font-style: italic;
+  }
+  
+  /* This is the footer of your site. */
+  
+  .end {
+    background-color: var(--nav-color);
+    width: var(--overall-width1);
+    height: auto;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    text-align: center;
+    border-radius: var(--corner);
+    order: 3;
+  }
+  
+  /* Media queries handle page layout once the screen is
+  a certain amount of pixels wide. This, for example, shifts elements
+  so they are more readable on a mobile screen. */
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: var(--back-color);
+      background: var(--grad1);
+      background: var(--grad2);
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .page {
+      background-color: var(--page-color);
+      width: var(--overall-width2);
+      min-height: 90vh;
+      max-height: auto;
+      box-shadow: var(--box-shadow);
+      padding: 10px;
+      margin: 10px;
+      border-radius: var(--corner);
+      display: flex;
+      flex-direction: column;
+      order: 2;
+    }
+    
+    .text {
+      width: 85%;
+      margin: auto;
+    }
+    
+    .head {
+      background-color: var(--nav-color);
+      width: var(--overall-width2);
+      height: auto;
+      box-shadow: var(--box-shadow);
+      padding: 10px;
+      text-align: center;
+      border-radius: var(--corner);
+      order: 1;
+    }
+    
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .button {
+      background: var(--grad1);
+      background: var(--grad3);
+      min-width: 100px;
+      width: auto;
+      height: auto;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      border-radius: var(--corner);
+      border: solid #ffffff50;
+      flex-grow: 1;
+      transition: transform 250ms;
+      box-shadow: var(--box-shadow2);
+      align-self: flex-start;
+    }
+    
+    .button:hover {
+      transform: scale(1.05);
+    }
+    
+    .button a {
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+    
+    .cardcontain {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-evenly;
+    }
+    
+    .cardfirst {
+      min-width: 300px;
+      max-width: 300px;
+      border-radius: var(--corner);
+      background-color: var(--page-color);
+      flex-grow: 1;
+      margin: 10px;
+      transition: transform 250ms;
+      box-shadow: var(--box-shadow2);
+    }
+    
+    .cardfirst img {
+      max-width: 300px;
+      max-height: 200px;
+      object-fit: cover;
+    }
+    
+    .cardfirst:hover {
+      transform: scale(1.05);
+    }
+    
+    .cardsecond {
+      text-align: center;
+      padding: 10px 20px;
+      background-color: var(--page-color);
+      max-height: 100%;
+      overflow-y: none;
+    }
+    
+    .cardsecond p {
+      font-style: italic;
+    }
+    
+    .end {
+      background-color: var(--nav-color);
+      width: var(--overall-width2);
+      height: auto;
+      box-shadow: var(--box-shadow);
+      padding: 10px;
+      text-align: center;
+      border-radius: var(--corner);
+      order: 3;
+    }
+  }
