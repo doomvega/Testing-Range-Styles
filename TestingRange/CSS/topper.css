@@ -1,0 +1,11 @@
+:root{
+    --back-img: url(#);
+    --back-color: lightblue;
+    --pfp-img: url(#);
+    --back-color: #d4ebeb;
+    --body-color: #b3d5df;
+    --head-color: #2e5b7e;
+    --button-color: #b3d5df;
+    --para-color: #385b76;
+    --div-shadow: 10px 10px 5px #00000050;
+  }

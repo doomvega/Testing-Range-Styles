@@ -1,0 +1,195 @@
+/* This is all text styling. */
+  p, a {
+    font-family: Halogen;
+    color: var(--para-color);
+    text-shadow: 3px 3px 5px #00000050;
+  }
+  
+  h1 {
+    font-family: JustAnotherHand;
+    border-bottom: solid 3px;
+    color: var(--head-color);
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-family: JustAnotherHand;
+    border-bottom: double 3px;
+    color: var(--head-color);
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-family: JustAnotherHand;
+    border-bottom: dotted 3px;
+    color: var(--head-color);
+    font-size: 30px;
+  }
+  
+  hr {
+    color: var(--head-color);
+  }
+  
+  /* This is all page & div styling. */
+  
+  body {
+    background-image: var(--back-img);
+    background-size: 100%;
+    background-color: var(--back-color);
+    color: black;
+    font-family: Verdana;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  
+  .page {
+    background-color: var(--back-color);
+    width: 40%;
+    height: 100%;
+    min-height: 93vh;
+    max-height: 93vh;
+    overflow-y: auto;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 15px 50px;
+    border: solid 5px white;
+    box-shadow: var(--div-shadow);
+  }
+  
+  .box {
+    background-color: var(--body-color);
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border: dotted 3px;
+  }
+  
+  .imgbox {
+    background-color: var(--back-color);
+    background-image: var(--pfp-img);
+    background-size: 150%;
+    width: 200px;
+    height: 200px;
+    border: solid 5px white;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: var(--div-shadow);
+  }
+  
+  .button {
+    background-color: var(--button-color);
+    width: 200px;
+    text-align: center;
+    border: solid 5px white;
+    margin: 10px;
+    align-self: center;
+    border-radius: 25px 10px;
+    box-shadow: var(--div-shadow);
+  }
+  
+  .button a {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  /* Media queries handle page layout once the screen is
+  a certain amount of pixels wide. This, for example, shifts elements
+  so they are more readable on a mobile screen. */
+  
+  @media only screen and (max-width: 600px) {
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    
+    .right {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: space-around;
+      flex-wrap: wrap;
+      height: 100%;
+      order: 1;
+    }
+    
+    .page {
+      background-color: var(--back-color);
+      width: 90%;
+      height: 100%;
+      min-height: 93vh;
+      max-height: none;
+      overflow-y: none;
+      margin: 5px;
+      padding: 15px;
+      border-radius: 15px 50px;
+      border: solid 5px white;
+      box-shadow: var(--div-shadow);
+      align-self: center;
+      order: 2;
+    }
+    
+    .box {
+      background-color: var(--body-color);
+      width: auto;
+      height: auto;
+      padding: 10px;
+      border: dotted 3px;
+    }
+    
+    .imgbox {
+      background-color: var(--back-color);
+      background-image: var(--pfp-img);
+      background-size: 150%;
+      width: 200px;
+      height: 200px;
+      border: solid 5px white;
+      margin-left: 25%;
+      margin-right: 25%;
+      overflow: hidden;
+      border-radius: 25px;
+      box-shadow: var(--div-shadow);
+      align-self: center;
+    }
+    
+    .button {
+      background-color: var(--button-color);
+      width: 100px;
+      flex-grow: 1;
+      text-align: center;
+      border: solid 5px white;
+      margin: 10px;
+      align-self: flex-start;
+      border-radius: 25px 10px;
+      box-shadow: var(--div-shadow);
+    }
+    
+    .button a {
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 15px;
+      text-decoration: none;
+    }
+  }
