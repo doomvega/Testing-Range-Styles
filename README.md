@@ -5,3 +5,7 @@ This is a Github repo for the various styles hosted on the Testing Range. I figu
 Because this is one repo for many styles, I recommend finding a way to download one folder from a GitHub repo. See this StackOverflow post: https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repository
 
 I personally use this Firefox extension for this: https://addons.mozilla.org/en-US/firefox/addon/gitzip/
+
+# Important!
+
+Please credit me somewhere on your site if you use my work. It means a lot to me. Let me know if you make a site with one of my layouts! I'd love to see. 🥰
