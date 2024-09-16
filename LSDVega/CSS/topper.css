@@ -1,0 +1,14 @@
+:root {
+    --back-tile: url("/images/rainbowdragontile.webp");
+    --back-size: 50%;
+    --back-grad1: rgb(204,79,79);
+    --back-grad2: linear-gradient(90deg, rgba(204,79,79,1) 0%, rgba(221,156,84,1) 16%, rgba(244,208,93,1) 36%, rgba(89,236,98,1) 64%, rgba(88,159,246,1) 82%, rgba(174,92,246,1) 100%);
+    --text-shadow: 0px 0px 5px #00000090;
+    --box-color: #ffffff;
+    --box-shadow: 0px 0px 35px #ffffff;
+    --head-color: #000000;
+    --para-color: #000000;
+    --rainbow-grad: linear-gradient(to right, #ef1c4a, #f49610, #e0b20c, #6adc30, #1999c8, #8c25ca);
+    --rainbow-anim: rainbow_animation 3s ease-in-out infinite;
+    --head-height: 150px;
+  }

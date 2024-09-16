@@ -1,0 +1,151 @@
+@font-face {
+    font-family: GolemScript;
+    src: url("/fonts/golem-script.woff2");
+  }
+  
+  @font-face {
+    font-family: Hardpixel;
+    src: url("/fonts/Hardpixel.OTF"); /* I tried to convert this one but it wouldn't go. Oh well */
+  }
+  
+  h1 {
+    font-family: Hardpixel;
+    border-bottom: double 2px;
+    color: var(--head-color);
+  }
+  
+  h2 {
+    font-family: Hardpixel;
+    border-bottom: dashed 2px;
+    color: var(--head-color);
+  }
+  
+  h3 {
+    font-family: Hardpixel;
+    border-bottom: dotted 2px;
+    color: var(--head-color);
+  }
+  
+  hr {
+    border: none;
+    border-top: dotted 2px;
+  }
+  
+  p, li, a {
+    font-family: GolemScript;
+    color: var(--para-color);
+  }
+  
+  body {
+    /* background: var(--back-grad1);
+    background: var(--back-grad2); */
+    background: var(--back-tile);
+    background-attachment: fixed;
+    background-size: var(--back-size);
+    text-shadow: var(--text-shadow);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .box {
+    border: double 3px;
+    width: 40%;
+    min-height: 95vh;
+    background-color: var(--box-color);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .box h1 {
+    text-align: center;
+  }
+  
+  .smallbox {
+    border: dotted 2px;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 0px 10px #00000050;
+  }
+  
+  .button {
+    border: solid 2px;
+    width: 25%;
+    background-color: var(--box-color);
+    box-shadow: 0px 0px 10px #00000075;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: rotate 250ms;
+    border-radius: 5px;
+  }
+  
+  .button a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    rotate: 5deg;
+    background: var(--rainbow-grad);
+      animation: var(--rainbow-anim);
+      background-size: 400% 100%;
+    
+  }
+  
+  .button:hover:nth-child(2n) {
+    rotate: -5deg;
+    background: var(--rainbow-grad);
+      animation: var(--rainbow-anim);
+      background-size: 400% 100%;
+  }
+  
+  .button_rainbow {
+      background: var(--rainbow-grad);
+      animation: var(--rainbow-anim);
+      background-size: 400% 100%;
+  }
+  
+  @keyframes rainbow_animation {
+      0%,100% {
+          background-position: 0 0;
+      }
+  
+      50% {
+          background-position: 100% 0;
+      }
+  }
+  
+  .bcontainer {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+  }
+  
+  .header {
+    width: auto;
+    height: var(--head-height);
+    background: red;
+    background: var(--rainbow-grad);
+    animation: var(--rainbow-anim);
+    background-size: 400% 100%;
+    border-radius: 5px;
+  }
+  
+  .header h1 {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    vertical-align: middle;
+    line-height: var(--head-height);
+  }
