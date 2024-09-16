@@ -1,0 +1,164 @@
+/* This is all text styling. */
+
+@font-face {
+    font-family: DoomTitle;
+    src: url("/fonts/DooM.woff2");
+  }
+  
+  @font-face {
+    font-family: DoomPara;
+    src: url("/fonts/EternalRegular.woff2")
+  }
+  
+  h1, h2, h3 {
+    font-family: DoomTitle;
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+  }
+  
+  p, ol, ul, a {
+    font-family: DoomPara;
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+  }
+  
+  hr {
+    color: var(--text-color);
+    box-shadow: var(--text-shadow);
+    border: none;
+    border-bottom: dashed 2px;
+  }
+  
+  /* This is all page & div styling. */
+  
+  body {
+    background: var(--grad1);
+    background: var(--grad2);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 900px;
+    min-height: 96vh;
+    max-height: 96vh;
+    background-color: var(--box-color);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .links {
+    width: 25%;
+    height: 100%;
+    margin: 5px;
+    margin: 10px;
+  }
+  
+  .about {
+    background-color: var(--button-color);
+    box-shadow: var(--box-shadow);
+    width: auto;
+    height: auto;
+    margin: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  
+  .button {
+    background-color: var(--button-color);
+    box-shadow: var(--box-shadow);
+    width: auto;
+    height: auto;
+    margin: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+    transition: transform 250ms;
+    text-align: center;
+  }
+  
+  .button a {
+    display: block;
+    color: white;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+  }
+  
+  .focus {
+    width: 50%;
+    height: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    overflow: auto;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background: var(--grad1);
+      background: var(--grad2);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .box {
+      width: 900px;
+      min-height: auto;
+      max-height: auto;
+      background-color: var(--box-color);
+      box-shadow: var(--box-shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .links {
+      width: 90%;
+      height: 100%;
+      margin: 5px;
+      margin: 10px;
+    }
+    
+    .about {
+      background-color: var(--button-color);
+      box-shadow: var(--box-shadow);
+      width: auto;
+      height: auto;
+      margin: 5px;
+      margin-bottom: 5px;
+      padding: 10px;
+    }
+    
+    .button {
+      background-color: var(--button-color);
+      box-shadow: var(--box-shadow);
+      width: auto;
+      height: auto;
+      margin: 5px;
+      margin-bottom: 5px;
+      padding: 20px;
+      transition: transform 250ms;
+      text-align: center;
+    }
+    
+    .button a {
+      display: block;
+      color: white;
+    }
+    
+    .button:hover {
+      transform: scale(1.05);
+    }
+    
+    .focus {
+      width: 90%;
+      height: 100%;
+      flex-grow: 1;
+      padding: 10px;
+    }
+  }
