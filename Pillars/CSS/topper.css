@@ -1,0 +1,18 @@
+:root {
+    --back-color: #101010;
+    --back-image: url("/images/lake2.webp");
+    --back-grad1: rgb(169,128,196);
+    --back-grad2: linear-gradient(147deg, rgba(169,128,196,1) 0%, rgba(200,122,122,1) 50%, rgba(193,161,116,1) 100%);
+    --para-color: #f0f0f0;
+    --column-color: #f0f0f050;
+    --button-color: #f0f0f0;
+    --img-shadow: 5px 5px 15px #00000050;
+    --img-rounded: 5px;
+    --column-rounded: 5px;
+    --left-rounded: 5px;
+    --pfp-img: url("/images/flower.webp");
+    --box-shadow: 0px 0px 5px #00000050;
+    --text-shadow: 2px 2px 5px #00000075;
+    --link-color: #833ab4;
+    --column-shadow: 0px 0px 10px #f0f0f050;
+  }
