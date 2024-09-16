@@ -1,0 +1,101 @@
+h1, h2, h3, h4, h5, h6, li {
+  text-indent: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: var(--divide);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "➳"; 
+  padding-right: 8px;
+  color: var(--para-color);
+}
+
+hr {
+  border: none;
+  border-top: var(--divide);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--back-grad1);
+  background: var(--back-grad2);
+  background-attachment: fixed;
+  text-shadow: var(--para-shadow);
+  text-indent: var(--text-indent);
+}
+
+.box {
+  background: var(--body-back);
+  width: 600px;
+  height: auto;
+  max-height: var(--max-height);
+  border: var(--box-border);
+  box-shadow: var(--shadow1);
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: auto;
+  border-radius: var(--round-corner);
+  margin: var(--margin);
+}
+
+.side {
+  background: var(--body-back);
+  width: 250px;
+  height: auto;
+  max-height: var(--max-height);
+  border: var(--box-border);
+  box-shadow: var(--shadow1);
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: auto;
+  border-radius: var(--round-corner);
+  margin: var(--margin);
+}
+
+.inside-box {
+  background: var(--body-back);
+  width: 90%;
+  height: auto;
+  border: var(--box-border2);
+  box-shadow: var(--shadow2);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: var(--round-corner);
+  margin: auto;
+}
+
+.button {
+  background: var(--body-back);
+  width: 90%;
+  height: auto;
+  border: var(--box-border2);
+  box-shadow: var(--shadow2);
+  padding: 10px;
+  border-radius: var(--round-corner);
+  margin: auto;
+  margin-top: 10px;
+  transition: transform 500ms;
+}
+
+.button:hover {
+  transform: scaleY(1.2);
+}
+
+.button a {
+  display: block;
+  text-indent: 0px;
+  text-decoration: none;
+  color: var(--para-color);
+}
+
+.button a::before {
+  content: "➳ ";
+}
