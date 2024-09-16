@@ -6,6 +6,8 @@ Because this is one repo for many styles, I recommend finding a way to download 
 
 I personally use this Firefox extension for this: https://addons.mozilla.org/en-US/firefox/addon/gitzip/
 
+This repo allows me to update my layouts in case something breaks, a weird use-case pops up, or I need to add something quickly. Make sure to check for any important updates for the style(s) you're using! They'll likely be CSS or JS updates.
+
 # Important!
 
 Please credit me somewhere on your site if you use my work. It means a lot to me. Let me know if you make a site with one of my layouts! I'd love to see. 🥰
