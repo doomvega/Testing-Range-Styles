@@ -1,0 +1,270 @@
+/* This is all text styling. */
+
+p {
+    background: var(--grad1);
+    background: var(--grad2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: var(--text-shadow);
+  }
+  
+  a {
+    text-decoration-color: var(--head-color);
+    font-weight: bold;
+  }
+  
+  h1, h2, h3 {
+    color: var(--head-color);
+    text-shadow: var(--text-shadow);
+  }
+  
+  hr {
+    height: 5px;
+    border-style: none;
+    border-top: dotted 3px;
+    border-color: var(--head-color);
+  }
+  
+  /* This is all page & div styling. */
+  
+  body {
+    background-color: var(--back-color);
+    background: var(--grad1);
+    background: var(--grad3);
+    background-attachment: fixed;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .central {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    max-height: 100vh;
+    overflow-y: auto;
+    margin: 10px;
+    order: 2;
+  }
+  
+  .left {
+    width: auto;
+    height: auto;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    order: 1;
+  }
+  
+  .paper {
+    background-color: var(--paper-color);
+    width: 90%;
+    min-height: auto;
+    max-height: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: var(--round); 
+    box-shadow: var(--box-shadow);
+  }
+  
+  .box {
+    background-color: var(--box-color);
+    width: 97%;
+    min-height: auto;
+    max-height: auto;
+    padding: 10px;
+    border-radius: var(--round);
+    margin: auto;
+    border: solid 3px var(--head-color);
+    box-shadow: var(--box-shadow3);
+  }
+  
+  .pfp {
+    width: 150px;
+    height: 150px;
+    background-color: var(--head-color);
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-radius: var(--round);
+    border-color: var(--paper-color);
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    overflow: hidden;
+  }
+  
+  .pfp img {
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+  }
+  
+  .links:hover {
+    transform: scale(1.2);
+  }
+  
+  .links {
+    min-width: 130px;
+    max-width: 130px;
+    height: auto;
+    background-color: var(--paper-color);
+    border-style: solid;
+    border-radius: var(--round);
+    border-color: var(--paper-color);
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    transition: transform 250ms;
+  }
+  
+  .links a {
+    display: block;
+    background: var(--grad1);
+    background: var(--grad4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: var(--text-shadow);
+    text-decoration: none;
+  }
+  
+  .smolpaper {
+    min-width: 130px;
+    max-width: 130px;
+    height: auto;
+    background-color: var(--paper-color);
+    border-style: solid;
+    border-radius: var(--round);
+    border-color: var(--paper-color);
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    margin: 10px;
+    font-size: smaller;
+  }
+  
+  /* Media queries handle page layout once the screen is
+  a certain amount of pixels wide. This, for example, shifts elements
+  so they are more readable on a mobile screen. */
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: var(--back-color);
+      background: var(--grad1);
+      background: var(--grad3);
+      background-attachment: fixed;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: visible;
+    }
+    
+    .central {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      max-height: none;
+      overflow-y: none;
+      order: 2;
+    }
+    
+    .left {
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+    }
+    
+    .paper {
+      background-color: var(--paper-color);
+      width: 90%;
+      min-height: auto;
+      max-height: auto;
+      margin: 10px;
+      padding: 10px;
+      border-radius: var(--round); 
+      box-shadow: var(--box-shadow);
+    }
+    
+    .box {
+      background-color: var(--box-color);
+      width: 90%;
+      min-height: auto;
+      max-height: auto;
+      padding: 10px;
+      border-radius: var(--round);
+      margin: auto;
+      border: solid 3px var(--head-color);
+      box-shadow: var(--box-shadow3);
+    }
+    
+    .pfp {
+      width: 150px;
+      height: 150px;
+      background-color: var(--head-color);
+      background-repeat: no-repeat;
+      border-style: solid;
+      border-radius: var(--round);
+      border-color: var(--paper-color);
+      box-shadow: var(--box-shadow);
+      margin: auto;
+      overflow: hidden;
+    }
+    
+    .pfp img {
+      width: 150px;
+      height: 150px;
+      object-fit: fill;
+    }
+    
+    .links:hover {
+      transform: scale(1.2);
+    }
+    
+    .links {
+      min-width: 100%;
+      max-width: 100%;
+      height: auto;
+      background-color: var(--paper-color);
+      border-style: solid;
+      border-radius: var(--round);
+      border-color: var(--paper-color);
+      box-shadow: var(--box-shadow);
+      text-align: center;
+      transition: transform 250ms;
+    }
+    
+    .links a {
+      display: block;
+      background: var(--grad1);
+      background: var(--grad4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: var(--text-shadow);
+      text-decoration: none;
+    }
+    
+    .smolpaper {
+      min-width: 100%;
+      max-width: 100%;
+      height: auto;
+      background-color: var(--paper-color);
+      border-style: solid;
+      border-radius: var(--round);
+      border-color: var(--paper-color);
+      box-shadow: var(--box-shadow);
+      padding: 10px;
+      margin: 10px;
+      font-size: smaller;
+      text-align: center;
+    }
+  }
