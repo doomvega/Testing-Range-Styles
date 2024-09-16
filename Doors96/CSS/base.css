@@ -1,0 +1,255 @@
+/* This is all text styling. */
+
+@font-face {
+    font-family: AriW9500;
+    src: url("/fonts/ari-w9500.woff2")
+  }
+  
+  h1, h2, h3 {
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+  }
+  
+  p, ol, ul {
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+  }
+  
+  a {
+    color: var(--accent-color);
+    text-shadow: var(--text-shadow);
+  }
+  
+  hr {
+    color: var(--text-color);
+    border: none;
+    border-bottom: dotted 2px;
+  }
+  
+  /* This is all page & div styling. */
+  
+  body {
+    background-color: var(--back-color);
+    overflow: visible;
+    font-family: AriW9500;
+  }
+  
+  .container {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .sideleft {
+    margin: 5px;
+    width: 20%;
+    min-height: auto;
+    max-height: var(--height);
+    padding: 10px;
+    overflow-y: auto;
+    background: var(--grad1);
+    background: var(--grad2);
+    border: var(--border);
+    box-shadow: var(--shadow);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    order: 2;
+  }
+  
+  .sideleft::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .button {
+    width: auto;
+    height: auto;
+    background-color: var(--button-color);
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    transition: rotate 150ms;
+    border: var(--border);
+    box-shadow: var(--shadow);
+  }
+  
+  .button:hover {
+    rotate: 5deg;
+  }
+  
+  .button:hover:nth-child(2n) {
+    rotate: -5deg;
+  }
+  
+  .button a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .popup {
+    margin: 5px;
+    width: 70%;
+    height: var(--height);
+    padding: 10px;
+    overflow-y: auto;
+    background: var(--grad1);
+    background: var(--grad2);
+    background-attachment: scroll;
+    border: var(--border);
+    box-shadow: var(--shadow);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    order: 3;
+  }
+  
+  .popup::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .head {
+    width: 70.25%;
+    padding: 10px;
+    height: var(--head-height);
+    background: var(--grad1);
+    background: var(--grad2);
+    margin: auto;
+    border: var(--border);
+    box-shadow: var(--shadow);
+    order: 1;
+  }
+  
+  .head h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: var(--head-height);
+    font-style: italic;
+    margin: auto;
+  }
+  
+  .darkblue {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: var(--dark-color);
+  }
+  
+  .darkblue p {
+    color: var(--text-color2);
+    font-weight: bold;
+  }
+  
+   @media only screen and (max-width: 600px) {
+    body {
+      background-color: var(--back-color);
+      overflow: visible;
+      font-family: AriW9500;
+    }
+    
+    .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .sideleft {
+      margin: auto;
+      margin-bottom: 10px;
+      width: 95%;
+      height: auto;
+      padding: 10px;
+      overflow-y: none;
+      background: var(--grad1);
+      background: var(--grad2);
+      border: var(--border);
+      box-shadow: var(--shadow);
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      order: 2;
+    }
+    
+    .sideleft::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .button {
+      width: auto;
+      height: auto;
+      background-color: var(--button-color);
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+      transition: rotate 150ms;
+      border: var(--border);
+      box-shadow: var(--shadow);
+    }
+    
+    .button:hover {
+      rotate: 5deg;
+    }
+    
+    .button:hover:nth-child(2n) {
+      rotate: -5deg;
+    }
+    
+    .button a {
+      display: block;
+      text-decoration: none;
+    }
+    
+    .popup {
+      margin: auto;
+      margin-bottom: 10px;
+      width: 95%;
+      height: auto;
+      padding: 10px;
+      overflow-y: none;
+      background: var(--grad1);
+      background: var(--grad2);
+      background-attachment: scroll;
+      border: var(--border);
+      box-shadow: var(--shadow);
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      order: 3;
+    }
+    
+    .popup::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .head {
+      width: 83%;
+      padding: 10px;
+      height: var(--head-height);
+      background: var(--grad1);
+      background: var(--grad2);
+      margin: auto;
+      margin-bottom: 10px;
+      border: var(--border);
+      box-shadow: var(--shadow);
+      order: 1;
+    }
+    
+    .head h1 {
+      text-align: center;
+      vertical-align: middle;
+      line-height: var(--head-height);
+      font-style: italic;
+      margin: auto;
+    }
+    
+    .darkblue {
+      width: auto;
+      height: auto;
+      padding: 5px;
+      background-color: var(--dark-color);
+    }
+    
+    .darkblue p {
+      color: var(--text-color2);
+      font-weight: bold;
+    }
+  }

@@ -1,0 +1,16 @@
+:root {
+    --back-color: #429791;
+    --button-color: #d1d4d3;
+    --text-color: #000000;
+    --text-color2: #ffffff;
+    --accent-color: #1a3c7f;
+    --dark-color: #1a3c7f;
+    --grad1: rgb(160,160,161);
+    --grad2: linear-gradient(0deg, rgba(160,160,161,1) 0%, rgba(222,222,222,1) 100%);
+    --border: outset 5px;
+    --shadow: 0px 0px 10px #00000050;
+    --text-shadow: 3px 3px 5px #00000050;
+    --height: 93vh;
+    --head-height: 100px;
+  }
+  
