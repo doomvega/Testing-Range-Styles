@@ -9,3 +9,5 @@ I personally use this Firefox extension for this: https://addons.mozilla.org/en-
 # Important!
 
 Please credit me somewhere on your site if you use my work. It means a lot to me. Let me know if you make a site with one of my layouts! I'd love to see. 🥰
+
+Copied directly from the Testing Range: *"Once I make these, the content that people put on their websites is out of my hands; I'm not responsible for it. If they're hosting with Neocities or Nekoweb, report the website if it breaks their rules. As a general rule of thumb, I would appreciate if the sites people made weren't bigoted or hate-filled. That's not why any of us should be making websites."*
