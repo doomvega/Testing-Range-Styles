@@ -1,0 +1,7 @@
+:root {
+    --text-color: black;
+    --page-color: rgb(241, 223, 205);
+    --border: 1px solid black;
+    --border2: 1px solid var(--page-color);
+    --shadow1: 5px 5px 0px #00000050;
+}

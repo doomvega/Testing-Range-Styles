@@ -1,0 +1,113 @@
+p {
+    text-indent: 20px;
+}
+
+body {
+    padding-top: 5px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(191,169,205);
+    background: linear-gradient(135deg, rgba(191,169,205,1) 0%, rgba(245,171,171,1) 50%, rgba(255,233,203,1) 100%); 
+    background-attachment: fixed;
+}
+
+.banner {
+    width: 721px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: var(--border);
+    box-shadow: var(--shadow1);
+    margin: 20px;
+    background-color: var(--page-color);
+}
+
+.pageContain {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabContain {
+    display: flex;
+    flex-direction: column;
+    width: 121px;
+    height: 80.25vh;
+}
+
+.page {
+    width: 600px;
+    height: 80vh;
+    overflow-y: auto;
+    background-color: var(--page-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    border: var(--border);
+    box-shadow: var(--shadow1);
+    z-index: 1;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .page::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .page {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 
+
+.openTab {
+    width: 100px;
+    height: auto;
+    max-height: 75px;
+    background-color: var(--page-color);
+    padding: 10px;
+    border: var(--border);
+    border-right: var(--border2);
+    z-index: 2;
+}
+
+.openTab a {
+    display: block;
+}
+
+.closeTab {
+    width: 100px;
+    height: auto;
+    max-height: 75px;
+    background-color: var(--page-color);
+    padding: 10px;
+    border: var(--border);
+    border-top: none;
+    z-index: 1;
+}
+
+.closeTab a {
+    display: block;
+}
+
+.closeTab:last-of-type {
+    box-shadow: var(--shadow1);
+}
+
+.pageEnd {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: auto;
+    border-top: var(--border);
+}
+
+.pageEnd p {
+    font-style: italic;
+    font-size: smaller;
+}
