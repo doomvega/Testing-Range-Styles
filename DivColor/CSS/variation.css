@@ -1,0 +1,60 @@
+.poast:nth-child(7n+2) {
+    background-color: var(--boxColor1);
+    box-shadow: var(--boxShadow) var(--boxColor1);
+}
+
+.poast:nth-child(7n+3) {
+    background-color: var(--boxColor2);
+    box-shadow: var(--boxShadow) var(--boxColor2);
+}
+
+.poast:nth-child(7n+4) {
+    background-color: var(--boxColor3);
+    box-shadow: var(--boxShadow) var(--boxColor3);
+}
+
+.poast:nth-child(7n+5) {
+    background-color: var(--boxColor4);
+    box-shadow: var(--boxShadow) var(--boxColor4);
+}
+
+.poast:nth-child(7n+6) {
+    background-color: var(--boxColor5);
+    box-shadow: var(--boxShadow) var(--boxColor5);
+}
+
+.poast:nth-child(7n+7) {
+    background-color: var(--boxColor6);
+    box-shadow: var(--boxShadow) var(--boxColor6);
+}
+
+.poast:nth-child(7n+8) {
+    background-color: var(--boxColor7);
+    box-shadow: var(--boxShadow) var(--boxColor7);
+}
+
+/* break */
+
+.poast h1::after {
+    content: "..."
+}
+
+.poast h2::after {
+    content: "..."
+}
+
+.poast h3::after {
+    content: "..."
+}
+
+.poast h4::after {
+    content: "..."
+}
+
+.poast h5::after {
+    content: "..."
+}
+
+.poast h6::after {
+    content: "..."
+}

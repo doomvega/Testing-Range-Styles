@@ -1,0 +1,13 @@
+:root {
+    --boxColor1: #ffd7d7;
+    --boxColor2: #ffe0be;
+    --boxColor3: #fff7d0;
+    --boxColor4: #d9ffe3;
+    --boxColor5: #e2f7ff;
+    --boxColor6: #e3e5ff;
+    --boxColor7: #f7e4ff;
+
+    --boxShadow: 0px 0px 10px;
+
+    --boxRadius: 10px;
+}

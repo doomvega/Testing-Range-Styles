@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>TITLE OF YOUR RSS FEED</title>
+  <link>LINK TO YOUR SITE</link>
+  <description>DESCRIPTION OF YOUR RSS FEED/SITE</description>
+
+  <item>
+	<title>TITLE OF POST</title>
+	<link>LINK#ID</link>
+	<description>DESCRIPTION OF POST</description>
+  </item>
+
+</channel>
+</rss>
