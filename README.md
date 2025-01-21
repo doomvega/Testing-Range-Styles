@@ -15,5 +15,3 @@ Please credit me somewhere on your site if you use my work. It means a lot to me
 Copied directly from the Testing Range: *"Once I make these, the content that people put on their websites is out of my hands; I'm not responsible for it. If they're hosting with Neocities or Nekoweb, report the website if it breaks their rules. As a general rule of thumb, I would appreciate if the sites people made with my work weren't bigoted or hate-filled. That's not why any of us should be making websites."*
 
 Of course, if you have any (CRITICAL, SITE IS BORKED) issues using any of these styles, please let me know and I will do my best to send out a fix ASAP.
-
-test
